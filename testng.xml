@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumTestNG">
+       <test thread-count="4" name="Test">
+              <classes>
+                     <class name="FST-Selenium-Java.SeleniumTestNG">
+                            <methods>
+                                   <include name="SeleniumTest1" />
+                                   <include name="SeleniumTest2" />
+                                   <include name="SeleniumTest3" />
+                            </methods>
+                     </class>
+                     <class name="SeleniumTestNG.MyThirdTest">
+                            <methods>
+                                   <include name="SeleniumTest1" />
+                                   <include name="SeleniumTest2" />
+                            </methods>
+                     </class>
+                     <class name="SeleniumTestNG.MySecondTest">
+                            <methods>
+                                   <include name="SeleniumTestNG" />
+                                   <include name="TestNGAssertionExam" />
+                            </methods>
+                     </class>
+              </classes>
+       </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ExampleSuite" >
+    <test name="Practice Grouping">
+        <groups>
+            <run>
+                <include name="Car" />
+                <include name="All" />
+            </run>
+        </groups>
+        <classes>
+            <class name="suiteExample.DemoOne" />
+            <class name="suiteExample.DemoTwo" />
+            <class name="activities.TestNGActivity1" />
+            <class name="activities.TestNGActivity2" />
+            <class name="activities.TestNGActivity3" />
+            <class name="activities.TestNGActivity4" />
+            <class name="examples.SeleniumTestNG" />
+            <class name="examples.TestNGAssertionExam" />
+        </classes>
+    </test>
+    <test name="Test">
+        <parameter name="sUsername" value="testuser"/>
+        <parameter name="sPassword" value="Test@123"/>
+        <classes>
+            <class name="suiteExample.TestNGParameterization" />
+        </classes>
+    </test>
+</suite>
